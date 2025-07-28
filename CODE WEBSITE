@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACAGAMINGSTORE - Premium Gaming Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #fff 0%, #ffecef 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-pink-200 to-pink-300 py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-pink-800">
+                    <span class="text-black">CACA</span>GAMING<span class="text-black">STORE</span>
+                </h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#games" class="text-pink-700 hover:text-pink-900 font-medium">Games</a></li>
+                        <li><a href="#how-to-order" class="text-pink-700 hover:text-pink-900 font-medium">Order</a></li>
+                        <li><a href="#testimonials" class="text-pink-700 hover:text-pink-900 font-medium">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-pink-100 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold text-pink-800 mb-4">
+                    Welcome to CACA GAMING STORE
+                </h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Your premium destination for top-up game vouchers, diamonds, and in-game items. Fast, safe, and reliable service with 24/7 customer support.
+                </p>
+                <a href="order.html" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 inline-block">
+                    Shop Now
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0d087d54-d935-452a-81d3-1150eb76d09e.png" alt="Gaming setup with pink aesthetic: pink gaming chair, RGB keyboard, and multiple game icons floating around" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section id="games" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Our Featured Games</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mobile Legends -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">Mobile Legends</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">MOBA</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4912f99-9829-40fb-a658-790f4afdca71.png" alt="Mobile Legends gameplay showing hero selection screen with colorful champions" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Top up your diamonds and get new heroes, skins, and battle points instantly!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>72 Diamonds</span>
+                            <span class="font-bold">Rp 20.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>172 Diamonds</span>
+                            <span class="font-bold">Rp 50.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>367 Diamonds</span>
+                            <span class="font-bold">Rp 100.000</span>
+                        </div>
+                    </div>
+                    
+                   <div class="flex justify-center">
+    <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+
+                </div>
+
+                <!-- PUBG Mobile -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">PUBG Mobile</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">Battle Royale</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2e05a90-22af-4acd-af0e-d9ee3c912f55.png" alt="PUBG Mobile battle royale match with players parachuting onto the island map" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Get UC (Unknown Cash) for premium skins, weapon skins, and battle passes!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>125 UC</span>
+                            <span class="font-bold">Rp 25.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>430 UC</span>
+                            <span class="font-bold">Rp 85.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>875 UC</span>
+                            <span class="font-bold">Rp 170.000</span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+                <!-- Free Fire -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">Free Fire</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">Battle Royale</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fd3732b-87f4-4d66-8528-25b1c60fca3c.png" alt="Free Fire character selection screen showing various characters with special abilities" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Buy diamonds to get elite passes, skins, and exclusive bundles in Free Fire!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>100 Diamonds</span>
+                            <span class="font-bold">Rp 15.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>510 Diamonds</span>
+                            <span class="font-bold">Rp 75.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>1060 Diamonds</span>
+                            <span class="font-bold">Rp 150.000</span>
+                        </div>
+                    </div>
+                    
+                     <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+
+                <!-- Honor of Kings -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">Honor of Kings</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">MOBA</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/94fb426a-9aa8-4a32-897d-01b58e5613fa.png" alt="Honor of Kings team fight scene with colorful hero abilities and effects" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Purchase vouchers for heroes, skins, and in-game items in Honor of Kings!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>60 Vouchers</span>
+                            <span class="font-bold">Rp 18.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>160 Vouchers</span>
+                            <span class="font-bold">Rp 48.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>330 Vouchers</span>
+                            <span class="font-bold">Rp 98.000</span>
+                        </div>
+                    </div>
+                    
+                     <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+
+                <!-- Magic Chess -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">Magic Chess</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">Auto Battler</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/43965737-fedf-4237-8b59-e7984f0f4bab.png" alt="Magic Chess game board with various chess pieces and colorful backgrounds" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Get starlight memberships and skins for your favorite Little Commander!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>Starlight Basic</span>
+                            <span class="font-bold">Rp 50.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>Starlight Plus</span>
+                            <span class="font-bold">Rp 85.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>Little Commander Skin</span>
+                            <span class="font-bold">Rp 120.000</span>
+                        </div>
+                    </div>
+                    
+ <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+
+                <!-- Roblox -->
+                <div class="game-card bg-pink-50 rounded-xl p-6 shadow-md transition duration-300 border border-pink-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-pink-800">Roblox</h3>
+                        <span class="bg-pink-600 text-white text-xs font-bold px-2 py-1 rounded">Sandbox</span>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b4267496-4423-49bb-9773-aba8e8ce8c2c.png" alt="Roblox game creation scene showing a variety of user-generated game worlds" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <p class="text-gray-700 mb-4">Purchase Robux to customize your avatar or get premium in your favorite games!</p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>400 Robux</span>
+                            <span class="font-bold">Rp 60.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>800 Robux</span>
+                            <span class="font-bold">Rp 120.000</span>
+                        </div>
+                        <div class="flex justify-between border-b border-pink-100 pb-2">
+                            <span>2000 Robux</span>
+                            <span class="font-bold">Rp 300.000</span>
+                        </div>
+                    </div>
+                    
+                     <button onclick="window.location.href='order.html'" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-medium transition duration-300">
+        Order Now
+    </button>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section id="how-to-order" class="py-16 bg-pink-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">How To Order</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Select Game & Items</h3>
+                    <p class="text-gray-700">Choose your favorite game and the items you want to purchase</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Complete Payment</h3>
+                    <p class="text-gray-700">Proceed to checkout and complete your payment</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Provide Game ID</h3>
+                    <p class="text-gray-700">Enter your game ID and server/region when prompted</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Receive Items</h3>
+                    <p class="text-gray-700">Get your items instantly delivered to your game account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-xl shadow-md border border-pink-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bbbcf90c-66a5-4b34-a136-bb41f35b8b6b.png" alt="Smiling young woman with glasses, wearing pink shirt" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-pink-800">Sarah Wijaya</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Super fast delivery! My Mobile Legends diamonds arrived within 2 minutes after payment. Will definitely order again!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-xl shadow-md border border-pink-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d739934-05b8-4d10-be8c-b3b6cc4516a4.png" alt="Young man with stylish haircut wearing black t-shirt" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-pink-800">Kevin Darmawan</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Great customer service! Had an issue with my PUBG UC purchase and they resolved it immediately."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-xl shadow-md border border-pink-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11a71337-290f-42cb-928d-928bb7cd9dd9.png" alt="Teenage girl with long hair smiling at camera" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-pink-800">Diana Putri</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Best prices for Robux compared to other stores! Plus they always have promos and discounts."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Text Metode Pembayaran</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff0f5 0%, #ffd1dc 50%, #ffe5e9 100%);
+            color: #7a0051;
+        }
+        
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(255, 105, 180, 0.2);
+            padding: 15px 0;
+            margin: 20px 0;
+            position: relative;
+            border-radius: 15px;
+            border: 2px solid #ff69b4;
+        }
+        
+        .marquee-title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #ff1493;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+            letter-spacing: 1px;
+        }
+        
+        .marquee {
+            display: flex;
+            animation: marquee 20s linear infinite;
+            width: max-content;
+        }
+        
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 30px;
+            min-width: 80px;
+        }
+        
+        .payment-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .payment-icon:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 5px rgba(255, 105, 180, 0.5));
+        }
+        
+        .payment-name {
+            font-size: 12px;
+            font-weight: 500;
+            color: #d80077;
+            background-color: rgba(255,255,255,0.7);
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-top: 3px;
+        }
+        
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 30px 0 15px;
+            font-size: 28px;
+            font-weight: 800;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+            background: linear-gradient(to right, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 20px;
+        }
+        
+        .description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            padding: 10px 20px;
+            color: #8b0066;
+            line-height: 1.6;
+            background-color: rgba(255,255,255,0.7);
+            border-radius: 15px;
+            border: 1px solid #ffb6c1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">OUR PAYMENT METHODS</h1>
+        <p class="description">We accept various payment methods to make your transactions easier. Choose the most convenient method for you!</p>
+        
+        <div class="marquee-container">
+            <div class="marquee-title">SUPPORTED BY:</div>
+            <div class="marquee" id="paymentMarquee">
+                <!-- E-Wallets -->
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00264cca-e5cc-4873-a078-764883d8b72e.png" alt="Logo OVO dengan latar ungu dan tulisan OVO putih" class="payment-icon">
+                    <span class="payment-name">OVO</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0922b9c-0446-47a1-86df-aaa4cfbdf3d6.png" alt="Logo GoPay dengan latar hijau dan tulisan GoPay putih" class="payment-icon">
+                    <span class="payment-name">GoPay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8ae24301-52be-4b89-9158-1b3b37c40eb1.png" alt="Logo ShopeePay dengan latar merah dan tulisan ShopeePay putih" class="payment-icon">
+                    <span class="payment-name">ShopeePay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c04e55bf-a1eb-4be1-afb8-0e8249398a0d.png" alt="Logo DANA dengan latar biru dan tulisan DANA putih" class="payment-icon">
+                    <span class="payment-name">DANA</span>
+                </div>
+                
+                <!-- Bank Transfers -->
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eb77e5d7-53e5-4a6f-980a-dc275d142e40.png" alt="Logo Bank BRI dengan latar biru dan tulisan BRI putih" class="payment-icon">
+                    <span class="payment-name">BRI</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90b6f1fc-d3eb-4a69-9742-138bc10f1990.png" alt="Logo Bank BCA dengan latar biru tua dan tulisan BCA putih" class="payment-icon">
+                    <span class="payment-name">BCA</span>
+                </div>
+                
+                <!-- Retail Payments -->
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2764b48d-a36d-4448-94c0-6d656ea2f2ca.png" alt="Logo Indomaret dengan latar hijau dan tulisan Indomaret putih" class="payment-icon">
+                    <span class="payment-name">Indomaret</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6cbd75e-7459-474f-b504-08c3c1413829.png" alt="Logo Alfamart dengan latar biru dan tulisan Alfamart putih" class="payment-icon">
+                    <span class="payment-name">Alfamart</span>
+                </div>
+                
+                <!-- Duplicate items to create seamless loop -->
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/449b0e1a-a132-4229-b461-c21983a3a143.png" alt="Logo OVO dengan latar ungu dan tulisan OVO putih" class="payment-icon">
+                    <span class="payment-name">OVO</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2f3c9ed8-b6d4-4f10-b544-5a41dc20e1f5.png" alt="Logo GoPay dengan latar hijau dan tulisan GoPay putih" class="payment-icon">
+                    <span class="payment-name">GoPay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e400bfc-d549-4026-810b-19d41fe2749c.png" alt="Logo ShopeePay dengan latar merah dan tulisan ShopeePay putih" class="payment-icon">
+                    <span class="payment-name">ShopeePay</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d17238f2-8268-44f4-ac1c-0b61f31cc39d.png" alt="Logo DANA dengan latar biru dan tulisan DANA putih" class="payment-icon">
+                    <span class="payment-name">DANA</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ea5033d-ceba-42df-9c35-6df3d853bcf7.png" alt="Logo Bank BRI dengan latar biru dan tulisan BRI putih" class="payment-icon">
+                    <span class="payment-name">BRI</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/698a76bd-9d4d-4d21-8a95-993897bf400a.png" alt="Logo Bank BCA dengan latar biru tua dan tulisan BCA putih" class="payment-icon">
+                    <span class="payment-name">BCA</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6271a4d7-1d3a-4393-945a-0f34a6b36793.png" alt="Logo Indomaret dengan latar hijau dan tulisan Indomaret putih" class="payment-icon">
+                    <span class="payment-name">Indomaret</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a88ab059-e226-49d1-a36e-af7339253e90.png" alt="Logo Alfamart dengan latar biru dan tulisan Alfamart putih" class="payment-icon">
+                    <span class="payment-name">Alfamart</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Clone the marquee content for seamless looping
+            const marquee = document.getElementById('paymentMarquee');
+            const marqueeContent = marquee.innerHTML;
+            marquee.innerHTML += marqueeContent;
+            
+            // Adjust animation speed based on content width
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            const marqueeWidth = paymentMethods.length * 140; // Approximate width per item
+            
+            // Create keyframes dynamically
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes marquee {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-${marqueeWidth/2}px); }
+                }
+                
+                .marquee {
+                    animation: marquee ${paymentMethods.length * 1.5}s linear infinite;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Pause animation on hover
+            const marqueeContainer = document.querySelector('.marquee-container');
+            marqueeContainer.addEventListener('mouseenter', function() {
+                marquee.style.animationPlayState = 'paused';
+            });
+            
+            marqueeContainer.addEventListener('mouseleave', function() {
+                marquee.style.animationPlayState = 'running';
+            });
+        });
+    </script>
+</body>
+</html>
+
+    <!-- Footer -->
+    <footer class="bg-pink-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">
+                        <span class="text-black">CACA</span>GAMING<span class="text-black">STORE</span>
+                    </h2>
+                    <p class="mt-2 text-pink-200">Your Premium Gaming Store</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://www.instagram.com/cacagaming.store?igsh=ZTJ0ODUzdGRtN3E0" class="text-white hover:text-pink-300 text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6285776537962" class="text-white hover:text-pink-300 text-xl"><i class="fab fa-whatsapp"></i></a>
+                  
+                </div>
+                <div>
+                    <p class="text-pink-200">© 2023 CACAGAMINGSTORE. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
