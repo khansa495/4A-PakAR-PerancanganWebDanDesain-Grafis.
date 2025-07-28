@@ -20,9 +20,6 @@ Halaman `order.html` merupakan bagian dari **CacaGamingStore** yang digunakan un
 - Pemberitahuan konfirmasi berhasil atau kesalahan saat submit.
 
 ## ✍️ Pengguna
-- **Nama** : [Masukkan nama kamu]  
-- **NIM** : [Masukkan NIM kamu]
-
 ---
 **Nama**: Khansa Rayyani Aulia
 **NIM**: 23110310029
