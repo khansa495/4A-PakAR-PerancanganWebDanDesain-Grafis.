@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - CACA GAMING STORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-pink-200 to-pink-300 py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-pink-800 text-center">
+                <span class="text-black">CACA</span>GAMING<span class="text-black">STORE</span>
+            </h1>
+        </div>
+    </header>
+
+    <!-- Order Form Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Place Your Order</h2>
+            <form id="orderForm" class="max-w-lg mx-auto bg-pink-50 p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="game" class="block text-gray-700 font-bold mb-2">Select Game:</label>
+                    <select id="game" name="game" class="border border-gray-300 rounded-lg w-full p-2" required>
+                        <option value="Mobile Legends">Mobile Legends</option>
+                        <option value="PUBG Mobile">PUBG Mobile</option>
+                        <option value="Free Fire">Free Fire</option>
+                        <option value="Honor of Kings">Honor of Kings</option>
+                        <option value="Magic Chess">Magic Chess</option>
+                        <option value="Roblox">Roblox</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="item" class="block text-gray-700 font-bold mb-2">Select Item:</label>
+                    <input type="text" id="item" name="item" placeholder="e.g., 72 Diamonds" class="border border-gray-300 rounded-lg w-full p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="gameId" class="block text-gray-700 font-bold mb-2">Game ID:</label>
+                    <input type="text" id="gameId" name="gameId" placeholder="Enter your Game ID" class="border border-gray-300 rounded-lg w-full p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="payment" class="block text-gray-700 font-bold mb-2">Select Payment Method:</label>
+                    <select id="payment" name="payment" class="border border-gray-300 rounded-lg w-full p-2" required>
+                        <option value="DANA">DANA</option>
+                        <option value="BRI">BRI</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Indomaret">Indomaret</option>
+                        <option value="Alfamart">Alfamart</option>
+                        <option value="OVO">OVO</option>
+                        <option value="GoPay">GoPay</option>
+                        <option value="ShopeePay">ShopeePay</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded-lg transition duration-300">
+                    Confirm Order
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section id="how-to-order" class="py-16 bg-pink-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">How To Order</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Select Game & Items</h3>
+                    <p class="text-gray-700">Choose your favorite game and the items you want to purchase</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Complete Payment</h3>
+                    <p class="text-gray-700">Proceed to checkout and complete your payment</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Provide Game ID</h3>
+                    <p class="text-gray-700">Enter your game ID when prompted</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <span class="text-pink-600 text-2xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-pink-800 mb-2">Receive Items</h3>
+                    <p class="text-gray-700">Get your items instantly delivered to your game account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">
+                        <span class="text-black">CACA</span>GAMING<span class="text-black">STORE</span>
+                    </h2>
+                    <p class="mt-2 text-pink-200">Your Premium Gaming Store</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://www.instagram.com/cacagaming.store?igsh=ZTJ0ODUzdGRtN3E0" class="text-white hover:text-pink-300 text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6285776537962" class="text-white hover:text-pink-300 text-xl"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div>
+                    <p class="text-pink-200">© 2023 CACAGAMINGSTORE. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            const game = document.getElementById('game').value;
+            const item = document.getElementById('item').value;
+            const gameId = document.getElementById('gameId').value;
+            const payment = document.getElementById('payment').value;
+
+            // Here you can handle the order submission, e.g., send data to a server or display a confirmation message
+            alert(`Order placed successfully!\nGame: ${game}\nItem: ${item}\nGame ID: ${gameId}\nPayment Method: ${payment}`);
+        });
+    </script>
+</body>
+</html>
